@@ -1,8 +1,25 @@
 aid: aspen-neuroscience
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aspen-neuroscience.png
 name: Aspen Neuroscience
-description: 'Aspen Neuroscience is a company surfaced as a portfolio company of gv and added to the API
-  Evangelist network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Aspen Neuroscience is a clinical-stage biotechnology company developing personalized
+  regenerative cell therapies for Parkinson''s disease. Its lead candidate, ANPD001, is an autologous
+  induced pluripotent stem cell (iPSC)-derived neuron replacement therapy that uses a patient''s own
+  cells to restore dopamine function without requiring immunosuppression, with manufacturing designed
+  for scalable, reproducible production. The company was surfaced as a portfolio company of GV (Google
+  Ventures) and added to the API Evangelist network. It operates a corporate website only and publishes
+  no public developer API, documentation, or specification surface at this time; artifact coverage here
+  is limited to domain/identity signals.'
 url: https://raw.githubusercontent.com/api-evangelist/aspen-neuroscience/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Life Sciences
+- Biotechnology
+- Cell Therapy
+- Regenerative Medicine
+- Neuroscience
+- Parkinson's Disease
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aspen-neuroscience-domain-security.yml
 - type: Website
-  url: aspenneuroscience.com
+  url: https://aspenneuroscience.com
+- type: Blog
+  url: https://aspenneuroscience.com/news-media/press-releases/
+- type: Support
+  url: https://aspenneuroscience.com/contact-us/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
